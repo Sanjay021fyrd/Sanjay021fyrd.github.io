@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sanjay Kumar, student developer</title>
+  <meta name="description" content="T.M. Sanjay Kumar is a third-year BCA student in Hubballi who builds web apps and small machine-learning tools in Python and JavaScript.">
+  <meta property="og:title" content="Sanjay Kumar, student developer">
+  <meta property="og:description" content="Web apps and small machine-learning tools. Looking for an internship or entry-level developer role.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%231c1b18'/%3E%3Ctext x='30' y='47' font-family='Georgia,serif' font-size='44' text-anchor='middle' fill='%23f3eee3'%3Es%3C/text%3E%3Ccircle cx='50' cy='47' r='5' fill='%23c8421f'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page">
+
+    <header class="top">
+      <a class="name" href="#top">T.M. Sanjay Kumar</a>
+      <nav aria-label="Main">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="assets/T_M_Sanjay_Kumar_Resume.pdf">Résumé (PDF)</a>
+      </nav>
+    </header>
+
+    <main id="top">
+
+      <section class="intro">
+        <h1>Hi, I'm Sanjay. I'm a student who builds <mark>web apps</mark> and small <mark>machine-learning</mark> tools.</h1>
+        <p class="lead">I'm in the third year of a BCA at KLE Society's P.C. Jabin Science College in Hubballi, and I mostly write Python and JavaScript. Two of my projects are below. I'm looking for an internship or an entry-level developer role.</p>
+        <p class="elsewhere">
+          <a href="https://github.com/Sanjay021fyrd">GitHub&nbsp;↗</a>
+          <a href="https://www.linkedin.com/in/sanju-t-">LinkedIn&nbsp;↗</a>
+          <a href="mailto:sanjusanjaykumar986@gmail.com">Email</a>
+        </p>
+      </section>
+
+      <section class="block" id="work">
+        <h2>Things I've built</h2>
+        <div class="content">
+
+          <article class="project">
+            <h3><a href="https://github.com/Sanjay021fyrd/INTELLIQUERY">IntelliQuery AI</a></h3>
+            <p class="meta">Python, FastAPI, React, MongoDB, Groq LLMs, Pandas</p>
+            <p>You ask a question about your data in plain English and it writes the query for you: SQL for a MySQL or PostgreSQL database, or Pandas for a CSV or Excel file. You get back the result table, the query it generated and, if you want one, a chart.</p>
+            <p>Because a language model is writing the queries, every one is checked before it runs. SQL may only be a SELECT or WITH statement, generated Pandas code goes through an AST check, and a second LLM pass validates the answer and retries when something looks wrong.</p>
+            <p>There are user accounts too: JWT in HTTP-only cookies, PBKDF2 password hashing, and saved database credentials encrypted with Fernet. Each user gets their own chat history, 13 kinds of Plotly chart, and CSV or email export.</p>
+            <p class="small">A team project, the three of us, for our fifth semester.</p>
+            <p class="links"><a href="https://github.com/Sanjay021fyrd/INTELLIQUERY">Source on GitHub ↗</a></p>
+          </article>
+
+          <article class="project">
+            <h3><a href="https://github.com/Sanjay021fyrd/Hoax-Hunter">Hoax Hunter</a></h3>
+            <p class="meta">Python, Streamlit, scikit-learn, Pandas, pytest</p>
+            <figure>
+              <img src="assets/hoax-hunter.jpg" width="1280" height="970" loading="lazy" alt="Hoax Hunter's page: a pasted fake KYC message, and a verdict card reading Likely Scam with a risk score of 100">
+              <figcaption>Hoax Hunter looking at a fake KYC message.</figcaption>
+            </figure>
+            <p>Paste an SMS, WhatsApp or email message and it gives you a risk score from 0 to 100, a verdict (Safe, Suspicious or Likely Scam), the red flags it found, the suspicious words highlighted, and what to do next. I made it for parents and grandparents.</p>
+            <p>Two things work together. A rule engine looks for urgency, requests for an OTP or PIN, fake KYC and prize offers, and lookalike bank links. A TF-IDF and Logistic Regression model was trained on the UCI SMS Spam Collection plus about 165 India-focused messages I wrote by hand. The rules say why they fired, so every verdict can be explained.</p>
+            <p>On 1,066 messages held back for testing it reached 99.0% accuracy and caught 97.2% of the scams. Most of that test data is older UK and US-style SMS, so I treat the number as optimistic. It has pytest tests, starts with one command, and nothing you paste is stored.</p>
+            <p class="links"><a href="https://github.com/Sanjay021fyrd/Hoax-Hunter">Source and README on GitHub ↗</a></p>
+          </article>
+
+        </div>
+      </section>
+
+      <section class="block" id="about">
+        <h2>About</h2>
+        <div class="content">
+          <p>I'm studying for a Bachelor of Computer Applications (2024 to 2027). The coursework covers software engineering, web technologies, programming and database management, and I use Git and GitHub for my own projects.</p>
+
+          <dl class="skills">
+            <dt>Languages</dt><dd>Python, JavaScript, SQL</dd>
+            <dt>Web</dt><dd>HTML, CSS, React, FastAPI, Streamlit</dd>
+            <dt>Data and ML</dt><dd>MongoDB, scikit-learn, Pandas</dd>
+            <dt>Tools</dt><dd>Git, GitHub, pytest</dd>
+          </dl>
+
+          <h3 class="sub">Competitions</h3>
+          <ul class="wins">
+            <li><span class="place">1st</span> VS Coders Tech Competition</li>
+            <li><span class="place">2nd</span> Youreka Jumble Competition</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="block" id="contact">
+        <h2>Say hi</h2>
+        <div class="content">
+          <p>Email is the easiest way to reach me:</p>
+          <p class="mail"><a href="mailto:sanjusanjaykumar986@gmail.com">sanjusanjaykumar986@gmail.com</a></p>
+          <p>You can also find me on <a href="https://www.linkedin.com/in/sanju-t-">LinkedIn</a> and <a href="https://github.com/Sanjay021fyrd">GitHub</a>, or call <a href="tel:+918618498369">+91 86184 98369</a>. My <a href="assets/T_M_Sanjay_Kumar_Resume.pdf">résumé is a PDF</a>.</p>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="foot">
+      <span>Plain HTML and CSS, no frameworks.</span>
+      <span>Updated November 2026</span>
+    </footer>
+
+  </div>
+</body>
+</html>
